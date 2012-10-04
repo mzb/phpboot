@@ -4,6 +4,10 @@ set -e
 
 
 # Setup local PHP project with Slim Framework.
+#
+# Usage:
+#
+#   phpboot new <project-name>
 function phpboot-new {
 
 if [ -z $1 ]; then
@@ -89,7 +93,11 @@ echo "  + Done."
 }
 
 
-# Delete local PHP project
+# Delete local PHP project created with phpboot-new.
+#
+# Usage:
+#
+#   phpboot del <project-name>
 function phpboot-del {
 
 if [ -z $1 ]; then
